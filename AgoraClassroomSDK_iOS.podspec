@@ -21,6 +21,8 @@ Pod::Spec.new do |spec|
   spec.dependency "AgoraEduCore", ">=2.8.70"
   spec.dependency "AgoraWidget", ">=2.8.0"
 
+  spec.dependency "AgoraRtcEngine_iOS"
+
   spec.frameworks = "AudioToolbox", "Foundation", "UIKit"
 
   spec.pod_target_xcconfig  = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64", "DEFINES_MODULE" => "YES" }
