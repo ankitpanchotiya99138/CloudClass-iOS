@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://docs.agora.io/en/agora-class/landing-page?platform=iOS'
   spec.license      = { "type" => "Copyright", "text" => "Copyright 2020 agora.io. All rights reserved." }
   spec.author       = { "Agora Lab" => "developer@agora.io" }
-  spec.source       = { :git => 'https://github.com/AgoraIO-Community/CloudClass-iOS', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://github.com/ankitpanchotiya99138/CloudClass-iOS/tree/feature/AP/share-screen', :tag => spec.version.to_s }
 
   spec.ios.deployment_target = '10.0'
   spec.frameworks = 'AudioToolbox', 'Foundation', 'UIKit'

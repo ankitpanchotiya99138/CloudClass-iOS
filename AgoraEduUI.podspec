@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "10.0"
   spec.swift_versions        = ["5.0", "5.1", "5.2", "5.3", "5.4"]
 
-  spec.source              = { :git => "https://github.com/AgoraIO-Community/CloudClass-iOS", :tag => "AgoraEduUI_v" + "#{spec.version.to_s}" }
+  spec.source              = { :git => "https://github.com/ankitpanchotiya99138/CloudClass-iOS/tree/feature/AP/share-screen", :tag => "AgoraEduUI_v" + "#{spec.version.to_s}" }
   spec.public_header_files = "SDKs/AgoraEduUI/Classes/**/*.h"
   spec.source_files        = "SDKs/AgoraEduUI/Classes/**/*.{h,m,swift}"
   
