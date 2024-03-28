@@ -112,6 +112,10 @@ class FcrSettingUIComponent: FcrUIComponent {
                                          action: #selector(onClickExitButton(_:)),
                                          for: .touchUpInside)
         
+        contentView.shareScreenButton.addTarget(self,
+                                         action: #selector(onClickShareScree(_:)),
+                                         for: .touchUpInside)
+        
         contentView.sharingLinkButton.addTarget(self,
                                                 action: #selector(onClickSharingLink(_:)),
                                                 for: .touchUpInside)
@@ -193,6 +197,10 @@ private extension FcrSettingUIComponent {
         } else {
             mediaController.closeLocalDevice(systemDevice: .speaker)
         }
+    }
+    
+    @objc func onClickShareScree(_ sender: UISwitch) {
+        
     }
     
     @objc func onClickExitButton(_ sender: UIButton) {

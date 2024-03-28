@@ -43,6 +43,9 @@ class FcrSettingsView: UIView {
     // Exit
     let exitButton = UIButton(type: .system)
     
+    // Share
+    let shareScreenButton = UIButton(type: .system)
+    
     weak var delegate: FcrSettingsViewDelegate?
     
     init(hasShareingLink: Bool) {
@@ -156,6 +159,11 @@ extension FcrSettingsView: AgoraUIContentContainer {
         addSubview(exitButton)
         exitButton.agora_enable = config.exit.enable
         exitButton.agora_visible = config.exit.visible
+        
+        addSubview(shareScreenButton)
+        shareScreenButton.agora_enable = config.share.enable
+        shareScreenButton.agora_visible = config.share.visible
+        
     }
     
     func initSharingLinkViewsFrame() {
@@ -268,6 +276,14 @@ extension FcrSettingsView: AgoraUIContentContainer {
             make?.bottom.equalTo()(-16)
         }
         
+        // Share
+        shareScreenButton.mas_makeConstraints { make in
+            make?.left.equalTo()(15)
+            make?.right.equalTo()(-15)
+            make?.height.equalTo()(30)
+            make?.bottom.equalTo()(-40)
+        }
+        
         cameraSwitch.transform = CGAffineTransform(scaleX: 0.75,
                                                    y: 0.75)
         
@@ -363,6 +379,16 @@ extension FcrSettingsView: AgoraUIContentContainer {
         exitButton.layer.cornerRadius = config.exit.cornerRadius
         exitButton.clipsToBounds = true
         exitButton.setTitleColor(config.exit.titleColor,
+                                 for: .normal)
+        
+        // Share
+        shareScreenButton.titleLabel?.font = config.share.titleFont
+        shareScreenButton.setTitle("fcr_room_leave_room".edu_ui_localized(),
+                            for: .normal)
+        shareScreenButton.backgroundColor = config.share.backgroundColor
+        shareScreenButton.layer.cornerRadius = config.share.cornerRadius
+        shareScreenButton.clipsToBounds = true
+        shareScreenButton.setTitleColor(config.share.titleColor,
                                  for: .normal)
     }
 }

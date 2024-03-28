@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.dependency "AgoraWidget", ">=2.8.0"
   spec.dependency "SwifterSwift"
   spec.dependency "Masonry"
+  spec.dependency "AgoraRtcEngine_iOS"
   
   spec.pod_target_xcconfig  = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64", "DEFINES_MODULE" => "YES" }
   spec.user_target_xcconfig = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64", "DEFINES_MODULE" => "YES" }

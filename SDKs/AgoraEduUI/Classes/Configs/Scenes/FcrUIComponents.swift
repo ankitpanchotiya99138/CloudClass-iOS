@@ -168,6 +168,7 @@ struct FcrUIComponentSetting: FcrUIComponentProtocol {
     var microphone   = FcrUIItemSettingMicrophone()
     var speaker      = FcrUIItemSettingSpeaker()
     var exit         = FcrUIItemSettingExit()
+    var share        = FcrUIItemSettingShare()
     
     /**ui**/
     let cornerRadius = FcrUIFrameGroup.containerCornerRadius

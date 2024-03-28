@@ -332,6 +332,16 @@ struct FcrUIItemSettingExit: FcrUIItemProtocol {
     let titleFont: UIFont         = FcrUIFontGroup.font12
 }
 
+struct FcrUIItemSettingShare: FcrUIItemProtocol {
+    var visible: Bool   = true
+    var enable: Bool    = true
+    
+    let backgroundColor: UIColor  = FcrUIColorGroup.systemBrandColor
+    let cornerRadius: CGFloat     = FcrUIFrameGroup.containerCornerRadius
+    let titleColor: UIColor       = FcrUIColorGroup.textContrastColor
+    let titleFont: UIFont         = FcrUIFontGroup.font12
+}
+
 struct FcrUIItemSettingTitle: FcrUIItemProtocol {
     var visible: Bool   = true
     var enable: Bool    = true
