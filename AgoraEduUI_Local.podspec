@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = { "type" => "Copyright", "text" => "Copyright 2020 agora.io. All rights reserved." }
   spec.author       = { "Agora Lab" => "developer@agora.io" }
   spec.module_name  = "AgoraEduUI"
-  spec.source       = { :git => "git@github.com:AgoraIO-Community/CloudClass-iOS.git", :tag => "AgoraEduUI_v" + "#{spec.version.to_s}" }
+  spec.source       = { :git => "https://github.com/AgoraIO-Community/CloudClass-iOS", :tag => "AgoraEduUI_v" + "#{spec.version.to_s}" }
 
   spec.ios.deployment_target = "10.0"
   
