@@ -14,8 +14,6 @@ Pod::Spec.new do |spec|
   spec.source              = { :git => "https://github.com/ankitpanchotiya99138/CloudClass-iOS/tree/feature/AP/share-screen", :tag => "AgoraEduUI_v" + "#{spec.version.to_s}" }
   spec.public_header_files = "SDKs/AgoraEduUI/Classes/**/*.h"
   spec.source_files        = "SDKs/AgoraEduUI/Classes/**/*.{h,m,swift}"
-  
-  spec.dependency "AgoraUIBaseViews", :git => 'https://download.agora.io/sdk/release/AgoraUIBaseViews_20221116_1700.zip'
   spec.dependency "SwifterSwift"
   spec.dependency "Masonry"
   spec.dependency "AgoraRtcEngine_iOS"
