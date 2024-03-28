@@ -36,7 +36,6 @@ Pod::Spec.new do |spec|
     
     # close source libs
     ss.dependency "AgoraEduCore/Source"
-    ss.dependency "AgoraWidget/Source"
   end
 
   spec.subspec "Build" do |ss|

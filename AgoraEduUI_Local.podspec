@@ -27,10 +27,6 @@ Pod::Spec.new do |spec|
     ss.resource_bundles = {
       "AgoraEduUI" => ["SDKs/AgoraEduUI/Assets/**/*.{xcassets,strings,gif,mp3}"]
     }
-
-    ss.dependency "AgoraUIBaseViews/Source"
-    ss.dependency "AgoraEduCore/Source"
-    ss.dependency "AgoraWidget/Source"
   end
 
   spec.subspec 'Build' do |ss|   

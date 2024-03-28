@@ -16,12 +16,10 @@ Pod::Spec.new do |spec|
 
   # open sources widgets
   spec.dependency "AgoraWidgets", ">=2.8.70"
-  
+  spec.dependency "AgoraRtcEngine_iOS"  
+
   # close source libs
   spec.dependency "AgoraEduCore", ">=2.8.70"
-  spec.dependency "AgoraWidget", ">=2.8.0"
-
-  spec.dependency "AgoraRtcEngine_iOS"
 
   spec.frameworks = "AudioToolbox", "Foundation", "UIKit"
 
